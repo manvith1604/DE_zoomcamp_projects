@@ -14,7 +14,9 @@ t.total_amount > 50000
 group by zp.Borough
 order by SUM(t.total_amount) desc
 ```
-Queens  700574.9699997478
-Brooklyn  587201.7999998855
-Manhattan  569632.6499997162
+Queens  700574.9699997478</br>
+Brooklyn  587201.7999998855</br>
+Manhattan  569632.6499997162</br>
+
+
 
