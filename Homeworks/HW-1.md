@@ -1,4 +1,9 @@
 ## Question 3. Count records
+```sql
+SELECT count(1) from green_tripdata
+WHERE (date(lpep_pickup_datetime) = '2019-09-18') AND (date(lpep_dropoff_datetime) = '2019-09-18')
+```
+Ans : 15612
 
 ## Question 4. Longest trip for each day
 
@@ -14,7 +19,7 @@ t.total_amount > 50000
 group by zp.Borough
 order by SUM(t.total_amount) desc
 ```
-Queens  700574.9699997478</br>
+Ans : Queens  700574.9699997478</br>
 Brooklyn  587201.7999998855</br>
 Manhattan  569632.6499997162</br>
 
@@ -27,5 +32,6 @@ t.DOLocationID = zd.LocationID
 AND zp.Zone = 'Astoria'
 order by t.tip_amount desc
 ```
+Ans : JFK airport
 
 
