@@ -8,7 +8,7 @@
 
 ```sql
 SELECT zp.Borough, SUM(t.total_amount) FROM green_tripdata t , zone zp, zone zd
-where t.PULocationID = zp. LocationID AND 
+where t.PULocationID = zp.LocationID AND 
 t.DOLocationID = zd.LocationID AND
 t.total_amount > 50000
 group by zp.Borough
