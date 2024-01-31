@@ -18,5 +18,14 @@ Queens  700574.9699997478</br>
 Brooklyn  587201.7999998855</br>
 Manhattan  569632.6499997162</br>
 
+## Question 6. Largest tip
+
+```sql
+SELECT * FROM green_tripdata t , zone zp, zone zd
+where t.PULocationID = zp.LocationID AND 
+t.DOLocationID = zd.LocationID
+AND zp.Zone = 'Astoria'
+order by t.tip_amount desc
+```
 
 
