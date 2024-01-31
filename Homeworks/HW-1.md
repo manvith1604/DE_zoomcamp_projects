@@ -6,8 +6,16 @@ WHERE (date(lpep_pickup_datetime) = '2019-09-18') AND (date(lpep_dropoff_datetim
 Ans : 15612
 
 ## Question 4. Longest trip for each day
-
-
+```sql
+SELECT
+    lpep_pickup_datetime,
+    DATEDIFF(minute, lpep_dropoff_datetime, lpep_pickup_datetime) AS duration
+FROM
+    green_tripdata
+ORDER BY
+    duration desc;
+```
+Ans : 2019-09-26 08:58:52 6045.033332929015
 
 ## Question 5. Three biggest pickups
 
